@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottie_simple"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            app:lottie_fileName="contact_lottie1.json"
+            app:lottie_autoPlay="true"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_title_simple"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Say Hello to\n Global Top-Up"
+                android:textSize="40dp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="#3f9dcc"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="2"
+            android:layout_height="0dp"
+            android:gravity="center|top"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_description_simple"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Send mobile top-up to more than 500 networks\ninover 140 countries"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:textColor="#3f9dcc"
+                android:layout_marginTop="24dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Skip"
+                android:textColor="#3f9dcc"
+                android:textSize="18sp"
+                android:layout_marginTop="64dp"
+
+                />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
